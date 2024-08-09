@@ -1,0 +1,75 @@
+.login-container{
+    background: black;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-heading {
+    position: absolute;
+    top: -50px;
+    font-size:xx-large;
+    font-weight: 500;
+    color: rgb(110, 200, 241);
+    background: transparent;
+    z-index: 1;
+}
+
+.login-box{
+    position: relative;
+   border: 2px dotted rgb(255, 255, 255);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background: rgb(0, 0, 0);
+   gap: 20px;
+   padding: 40px 50px;
+   width: 100%;
+   max-width: 400px;
+}
+
+.login-box div {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Ensure full width for inputs and labels */
+}
+
+.login-box label {
+    color: white;
+    margin-bottom: 5px; /* Add spacing between label and input */
+}
+
+.login-box input {
+    padding: 10px; /* Increased padding for better usability */
+    border: 2px solid rgb(110, 200, 241);
+    border-radius: 10px;
+    background-color: #fff; /* Added background for better contrast */
+    color: #000; /* Set text color for better readability */
+}
+
+.login-box input[type="date"] {
+    color: rgb(151, 151, 151);
+}
+
+.login-box .name, 
+.login-box .email, 
+.login-box .password, 
+.login-box .dob, 
+.login-box .city {
+    width: 100%;
+}
+
+div button{
+    padding: 10px; /* Increased padding for better usability */
+    border: 2px solid rgb(110, 200, 241);
+    border-radius: 10px;
+    background-color: rgb(110, 200, 241); /* Added background for better contrast */
+    color: #000; /* Set text color for better readability */
+    width: 30%;
+    font-size: 1rem;
+    margin: auto auto;
+}

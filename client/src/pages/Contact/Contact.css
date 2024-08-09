@@ -1,0 +1,101 @@
+.contact-container {
+    margin-top: 130px;
+    background: black;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contact-heading {
+    position: absolute;
+    top: -50px;
+    font-size: xx-large;
+    font-weight: 500;
+    color: rgb(110, 200, 241);
+    background: transparent;
+    z-index: 1;
+}
+
+.contact-box {
+    position: relative;
+    border: 2px dotted rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0, 0, 0);
+    gap: 20px;
+    padding: 40px 50px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.contact-box div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* Ensure full width for inputs and labels */
+}
+
+.contact-box label {
+    color: white;
+    margin-bottom: 5px;
+    /* Add spacing between label and input */
+}
+
+.contact-box input {
+    padding: 10px;
+    /* Increased padding for better usability */
+    border: 2px solid rgb(110, 200, 241);
+    border-radius: 10px;
+    background-color: #fff;
+    /* Added background for better contrast */
+    color: #000;
+    /* Set text color for better readability */
+}
+
+.contact-box textarea {
+    padding: 10px;
+    /* Increased padding for better usability */
+    border: 2px solid rgb(110, 200, 241);
+    border-radius: 10px;
+    background-color: #fff;
+    /* Added background for better contrast */
+    color: #000;
+    /* Set text color for better readability */
+}
+
+.contact-box input[type="date"] {
+    color: rgb(151, 151, 151);
+}
+
+.contact-box .name,
+.contact-box .email,
+.contact-box .password,
+.contact-box .dob,
+.contact-box .city {
+    width: 100%;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+div button {
+    padding: 10px;
+    /* Increased padding for better usability */
+    border: 2px solid rgb(110, 200, 241);
+    border-radius: 10px;
+    background-color: rgb(110, 200, 241);
+    /* Added background for better contrast */
+    color: #000;
+    /* Set text color for better readability */
+    width: 30%;
+    font-size: 1.2rem;
+    margin: auto auto;
+}

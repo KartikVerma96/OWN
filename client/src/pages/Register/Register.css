@@ -1,0 +1,95 @@
+.register-container {
+    margin-top: 150px;
+    background: black;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.register-heading {
+    position: absolute;
+    top: -50px;
+    font-size: xx-large;
+    font-weight: 500;
+    color: rgb(110, 200, 241);
+    background: transparent;
+    z-index: 1;
+}
+
+.register-box {
+    position: relative;
+    border: 2px dotted rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0, 0, 0);
+    gap: 20px;
+    padding: 40px 50px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.register-box div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.register-box label {
+    color: white;
+    margin-bottom: 5px;
+}
+
+.register-box input {
+    padding: 10px;
+    border: 2px solid rgb(110, 200, 241);
+    border-radius: 10px;
+    background-color: #fff;
+    color: #000;
+    outline: none;
+}
+
+.register-box input[type="date"] {
+    color: rgb(151, 151, 151);
+}
+
+.register-box .name,
+.register-box .email,
+.register-box .password,
+.register-box .dob,
+.register-box .city {
+    width: 100%;
+}
+
+div button {
+    padding: 10px;
+    border: 2px solid rgb(110, 200, 241);
+    border-radius: 10px;
+    background-color: rgb(110, 200, 241);
+    color: #000;
+    width: 30%;
+    font-size: 1rem;
+    margin: auto auto;
+}
+
+.register-box input.error-border {
+    border: 3px solid red;
+}
+
+.error-message {
+    color: red;
+    margin-top: 2px;
+    font-size: x-small;
+    display: block;
+}
+
+.error-general-message {
+    color: red;
+    margin-top: 2px;
+    font-size: small;
+    display: block;
+}
